@@ -1,0 +1,104 @@
+cleft lip
+cleft palate
+aphthous cancer
+behçet syndrome
+behçet disease
+oral herpes
+squamous cell carcinoma
+mumps
+sialadenitis
+sialolithiasis
+pleomorphic adenoma
+warthin tumor
+mucoepidermoid carcinoma
+tracheoesophageal fistula
+esophageal web
+zenker diverticulum
+mallory-weiss syndrome
+esophagel varices
+achalasia
+gastroesophageal reflux disesase 
+GERD
+barrett esophagus
+esophageal carcinoma
+gastroschisis
+omphalocele
+pyloric stenosis
+acute gastritis
+chronic gastritis
+peptic ulcer disease
+gastric carcinoma
+duodenal atresia
+esophageal atresia
+meckel diverticulum
+volvulus
+intussusception
+small bowel infarction
+lactose intolerance
+celiac disease
+tropical sprue
+whipple disease
+abetalipoproteinemia
+carcinoid tumor
+carcinoid syndrome
+carcinoid heart disease
+acute appendicitis
+hirschsprung disease
+colonic diverticula
+angiodysplasia
+hereditary hemorrhagic telangiectasia
+ischemic colitis
+irritable bowel syndrome
+colonic polyps
+familial adenomatous polyposis
+juvenile polyp
+peutz-jeghers syndrome
+colorectal carcinoma
+crohn disease
+ulcerative colitis
+gardner syndrome
+turcot syndrome
+hereditary nonpolyposis colorectal carcinoma
+colovesicular fistula
+boerhaave syndrome
+anorexia
+bulimia
+annular pancreas
+acute pancreatitis
+chronic pancreatitis
+pancreatic carcinoma
+biliary atresia
+cholelithiasis
+gallstones
+biliary colic
+acute cholecystitis
+chronic cholecystitis
+ascending cholangitis
+ileus
+gallbladder carcinoma
+gilbert syndrome
+dubin-johnson syndrome
+crigler-najjar syndrome
+viral hepatitis
+biliary tract obstruction
+hepatitis A
+HAV
+HBV
+HCV
+HDV
+HEV
+hepatitis B
+hepatitis C
+hepatitis D
+hepatitis E
+cirrhosis
+alcohol-related liver disease
+nonalcoholic fatty liver disease
+hemochromatosis
+hepatorenal syndrome
+wilson disease
+primary biliary cholangitis
+primary sclerosing cholangitis
+reye syndrome
+hepatic adenoma
+hepatocellular carcinoma

@@ -1,0 +1,27 @@
+dysphagia
+halitosis
+vomiting
+bloating
+indigestion
+abdominal distension
+aspiration
+weight loss
+constipation
+abdominal pain
+cough
+nausea
+hoarse voice
+portal hypertension
+anemia
+hematemesis
+melena
+jaundice
+hypoalbunemia
+coagulapathy
+hepatomegaly
+elevated liver enzymes
+hemosiderosis
+fibrosis
+diarrhea
+heartburn
+dyspepsia
