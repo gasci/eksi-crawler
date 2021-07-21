@@ -15,6 +15,9 @@ class News:
         self.db = db
 
     def get_keywords(self, source):
+        """
+        Gets desired keywords in the mongodb database
+        """
 
         existing_news_keywords = []
         temp_array = []
@@ -37,6 +40,9 @@ class News:
         )
 
     def upload_articles(self, keyword, source):
+        """
+        Uploads articles to mongodb database
+        """
         for url in self.documents:
             
             try:
@@ -63,6 +69,9 @@ class News:
 
 
     def scrape_all(self, url_output_location):
+        """
+        Finds relevant articles on Bing using the keywords in the database
+        """
         for source in self.sources:
 
             self.get_keywords(source)
@@ -91,18 +100,3 @@ class News:
                 # upload articles to mongodb
                 self.upload_articles(keyword, source)
 
-    # def get_mesh_synonyms_for_source(self, source):
-    #     existing_news_keywords = self.get_existing_news_for_source(source)
-    #     temp_array = []
-
-    #     for document in self.db["mesh_synonyms"].find():
-    #         for synonym in document['synonyms']:
-    #             temp_array.append(synonym['word'])
-
-    #     # keywords list creation
-    #     self.keywords = [
-    #         item for item in temp_array if item not in existing_news_keywords]
-
-    #     print("{} keywords left for the source: {}".format(
-    #         len(self.keywords), source)
-    #     )

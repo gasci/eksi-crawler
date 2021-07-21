@@ -8,20 +8,21 @@ from pymongo import MongoClient
 import os
 import environ
 
+# create an environment file
 env = environ.Env()
 env.read_env(env.str('ENV_PATH', '.env'))
 
+# disease names are written in this file
 input_location = "data/input/diseases-english.txt"
 
+# mongo cluster username and password
 mongo_cli_username = os.environ.get('MONGO_CLI_USERNAME')
 mongo_cli_password = os.environ.get('MONGO_CLI_PASSWORD')
 
+# connect to mongo cluster
 client = MongoClient("mongodb+srv://{}:{}@cluster0.plop5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority".format(
     mongo_cli_username, mongo_cli_password))
 db = client['healdash']
-
-
-
 
 
 class Answer:
@@ -80,6 +81,9 @@ class Answer:
                 pass
 
     def clean_entry(self, entry):
+        """
+        Fixes formatting issues
+        """
         return (
             entry
             .replace("\n", "")  # remove new lines
