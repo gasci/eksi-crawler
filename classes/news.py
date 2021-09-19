@@ -43,6 +43,10 @@ class News:
         """
         Uploads articles to mongodb database
         """
+        print("""
+            UPLOADING ARTICLES
+        """)
+
         for url in self.documents:
             
             try:

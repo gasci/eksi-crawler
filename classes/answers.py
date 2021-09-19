@@ -6,11 +6,9 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 from pymongo import MongoClient
 import os
-import environ
 
-# create an environment file
-env = environ.Env()
-env.read_env(env.str('ENV_PATH', '.env'))
+from dotenv import load_dotenv
+load_dotenv("../.env")
 
 # disease names are written in this file
 input_location = "data/input/diseases-english.txt"
@@ -18,11 +16,12 @@ input_location = "data/input/diseases-english.txt"
 # mongo cluster username and password
 mongo_cli_username = os.environ.get('MONGO_CLI_USERNAME')
 mongo_cli_password = os.environ.get('MONGO_CLI_PASSWORD')
+cluster_name = os.environ.get('CLUSTER_NAME')
 
 # connect to mongo cluster
-client = MongoClient("mongodb+srv://{}:{}@cluster0.plop5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority".format(
-    mongo_cli_username, mongo_cli_password))
-db = client['healdash']
+client = MongoClient("mongodb+srv://{}:{}@{}.plop5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority".format(
+    mongo_cli_username, mongo_cli_password, cluster_name))
+db = client[mongo_cli_username]
 
 
 class Answer:

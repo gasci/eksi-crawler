@@ -8,8 +8,6 @@ Created on Tue Oct  1 06:28:47 2019
 import requests
 from bs4 import BeautifulSoup
 from collections import deque
-import threading
-import time
 
 class Bing:
     def __init__(self, search_term, site, urls_file):

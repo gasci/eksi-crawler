@@ -6,22 +6,23 @@ Under construction
 import os
 import tweepy as tw
 import pandas as pd
-import json
-import numpy as np
 import os
-import environ
 from collections import defaultdict
 from pymongo import MongoClient
 
-env = environ.Env()
-env.read_env(env.str('ENV_PATH', '.env'))
+from dotenv import load_dotenv
+load_dotenv("../.env")
 
 mongo_cli_username = os.environ.get('MONGO_CLI_USERNAME')
 mongo_cli_password = os.environ.get('MONGO_CLI_PASSWORD')
+cluster_name = os.environ.get('CLUSTER_NAME')
 
-client = MongoClient("mongodb+srv://{}:{}@cluster0.plop5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority".format(
-    mongo_cli_username, mongo_cli_password))
-db = client['healdash']
+client = MongoClient(
+    "mongodb+srv://{}:{}@{}.plop5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE".format(
+        mongo_cli_username, mongo_cli_password, cluster_name
+    )
+)
+db = client[mongo_cli_username]
 
 date_since = "2020-02-17"
 query_count = 10
